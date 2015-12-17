@@ -1,6 +1,8 @@
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * 
@@ -27,6 +29,21 @@ public class TestDemo {
 		
 		for(String s: set)
 			System.out.print(s+ " ");
+		
+		//CopyOnWriteArrayList
+		CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>();
+		list.add("a");
+		list.add("b");
+		list.add("c");
+		Iterator it = list.iterator();
+		while(it.hasNext()){
+			list.add("1");
+			System.out.println(it.next()+" ");
+		}
+		System.out.println(list.size());
+		
+	
+		
 
 	}
 
