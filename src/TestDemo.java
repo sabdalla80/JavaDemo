@@ -25,6 +25,7 @@ public class TestDemo {
 		set.add("sam");
 		set.add("adam");
 		set.add("Zak");
+                set.add("Judy");
 		set.add(" amani"); //sapce first, UpperCase second, lowercase third
 		
 		for(String s: set)
